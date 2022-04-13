@@ -32,7 +32,7 @@
     },
     {
       "id": 12,
-      "name": "Shubham",
+      "name": "Ankit",
       "salary": "65000"
     },
     {
@@ -44,6 +44,21 @@
       "id": 4,
       "name": "Clark",
       "salary": "15000"
+    },
+    {
+      "id": 14,
+      "name": "Vinaya",
+      "salary": "15000"
+    },
+    {
+      "id": 15,
+      "name": "Ajaya kumar",
+      "salary": "7000"
+    },
+    {
+      "id": 16,
+      "name": "Powan",
+      "salary": "9000"
     }
   ]
 }
