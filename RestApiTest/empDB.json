@@ -41,39 +41,9 @@
       "id": 13
     },
     {
-      "id": 14,
-      "name": "Vinaya",
+      "id": 4,
+      "name": "Clark",
       "salary": "15000"
-    },
-    {
-      "id": 15,
-      "name": "Ajaya kumar",
-      "salary": "7000"
-    },
-    {
-      "id": 16,
-      "name": "Powan",
-      "salary": "9000"
-    },
-    {
-      "id": 17,
-      "name": "Vinaya",
-      "salary": "15000"
-    },
-    {
-      "id": 18,
-      "name": "Ajaya kumar",
-      "salary": "7000"
-    },
-    {
-      "id": 19,
-      "name": "Powan",
-      "salary": "9000"
-    },
-    {
-      "id": 20,
-      "name": "Swathi",
-      "salary": "12000"
     }
   ]
 }
