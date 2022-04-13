@@ -51,5 +51,36 @@ namespace RestApiTest
             }
         }
 
+        /* UC2:- Ability to add a new Employee to the EmployeePayroll JSON Server.
+                 - Use JSON Server and RESTSharp to save the EmployeePayroll Data of id, name, and salary.
+                 - Ability to add using RESTSharp to JSONServer in the MSTest Test Case and then on success add to Employee Payroll .
+                 - Validate with the successful Count 
+        */
+        [TestMethod]
+        public void OnCallingPostAPI_ReturnEmployeeObject()
+        {
+            // Arrange
+            // Initialize the request for POST to add new employee
+            RestRequest request = new RestRequest("/employees", Method.Post);
+            request.RequestFormat = DataFormat.Json;
+
+            request.AddBody(new Employee
+            {
+                id = 4,
+                name = "Clark",
+                salary = "15000"
+            });
+
+            //Act
+            RestResponse response = client.ExecuteAsync(request).Result;
+
+            //Assert
+            Assert.AreEqual(response.StatusCode, HttpStatusCode.Created);
+            Employee dataResponse = JsonConvert.DeserializeObject<Employee>(response.Content);
+            Assert.AreEqual("Clark", dataResponse.name);
+            Assert.AreEqual("15000", dataResponse.salary);
+            System.Console.WriteLine(response.Content);
+        }
+
     }
 }
